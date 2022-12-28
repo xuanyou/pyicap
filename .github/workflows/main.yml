@@ -1,0 +1,14 @@
+name: basic-automated-test
+
+on:
+  push:
+    branches:
+      - 'master'
+      - 'basic-automated-test'
+
+jobs:
+  test-pyicap:
+    runs-on: ubuntu-latest
+      steps:
+        - name: Test
+          run: docker-test.sh
