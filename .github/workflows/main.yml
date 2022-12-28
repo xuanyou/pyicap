@@ -9,6 +9,6 @@ on:
 jobs:
   test-pyicap:
     runs-on: ubuntu-latest
-      steps:
-        - name: Test
-          run: docker-test.sh
+    steps:
+      - name: Test
+        run: docker-test.sh
