@@ -11,14 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - 
-        name: Checkout repository
-        uses: actions/checkout@v3
-      -
-        name: DEBUG - check the runner's folders
-        run: |
-          pwd
-          ls
-          ls /home/runner/work/pyicap/pyicap
-      - 
         name: Run test
         run: ./docker-test.sh
